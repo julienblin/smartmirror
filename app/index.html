@@ -1,18 +1,16 @@
-<html>
+<html lang="fr" ng-app="app">
 
-<body>
-  <h1>Hello World!</h1> We are using Electron
-  <script>
-    document.write(process.versions['electron'])
-  </script> on
-  <script>
-    document.write(process.platform)
-  </script>
-  <script type="text/javascript">
-    var fs = require('fs');
-      var file = fs.readFileSync('app/package.json');
-      document.write(file);
-  </script>
+<head>
+  <title>Smart Mirror</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="app.css" />
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="app.js"></script>
+  <script src="controllers.js"></script>
+</head>
+
+<body ng-controller="SmartMirrorController as ctrl">
+  <p>Nothing here {{'yet' + '!'}}</p>
 
 </body>
 
