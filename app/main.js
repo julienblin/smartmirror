@@ -6,7 +6,7 @@ var BrowserWindow = require('browser-window');
 var mainWindow = null;
 
 app.on('ready', function () {
-  mainWindow = new BrowserWindow({ fullscreen: true });
+  mainWindow = new BrowserWindow({ fullscreen: true, frame: false });
   mainWindow.loadURL('file://' + __dirname + '/index.html');
 
   // Open the DevTools if run with "--debug as argument"
